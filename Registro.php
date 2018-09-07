@@ -32,57 +32,65 @@
             <!-- Iniciar Sesion -->
             <div id="iniciar-sesion" style="visibility:hidden">
                 <h1>Persona</h1>
-                <form action="#" method="post">
+                <form action="Guardarregistro.php" method="post">
+                    <input type="text" style="visibility:hidden" value="persona">
                     <div class="contenedor-input">
                         <label>
                             Usuario <span class="req">*</span>
                         </label>
-                        <input type="text" required>
+                        <input type="text" pattern="[A-Za-z0-9.]{1,20}" name="usu" required>
                     </div>
 
                     <div class="contenedor-input">
                         <label>
                             Contraseña <span class="req">*</span>
                         </label>
-                        <input type="password" required>
+                        <input type="password" pattern="[A-Za-z0-9.]{1,20}" name="contra" required>
                     </div>
 
                     <div class="contenedor-input">
                         <label>
                             Nombre <span class="req">*</span>
                         </label>
-                        <input type="text" required>
+                        <input type="text" pattern="[A-Za-z]{1,60}" name="nom" required>
+                    </div>
+
+                                       <div class="contenedor-input">
+                        <label>
+                            Apellido <span class="req">*</span>
+                        </label>
+                        <input type="text" pattern="[A-Za-z]{1,60}" name="ape" required>
                     </div>
 
                      <div class="contenedor-input">
                         <label>
                            Correo <span class="req">*</span>
                         </label>
-                        <input type="text" required>
+                        <input type="email" name="cor" required>
                     </div>
 
                      <div class="contenedor-input">
                         <label>
                             DNI <span class="req">*</span>
                         </label>
-                        <input type="text" required>
+                        <input type="text" pattern="[0-9]{8}" name="dni" required>
                     </div>
 
                      <div class="contenedor-input">
                         <label>
                             Telefono <span class="req">*</span>
                         </label>
-                        <input type="text" required>
+                        <input type="text" pattern="[0-9]{7}" name="tel" required>
                     </div>
 
                      <div class="contenedor-input">
                         <label>
                             Dirección <span class="req">*</span>
                         </label>
-                        <input type="text" required>
+                        <input type="text"  name="dir" required>
                     </div>
                     <br>
-                    <p class="forgot"><a href="#">Tienes Cuenta ? Login </a></p>
+                    <p class="forgot"><a href="index.php">Tienes Cuenta ? Login </a></p>
                       <br>
                         <br>
                     <input type="submit" class="button button-block" value="Registrarse">
@@ -93,55 +101,56 @@
             <!-- Registrarse -->
             <div id="registrarse">
                 <h1>Empresa</h1>
-                <form action="#" method="post">
+                <form action="Guardarregistro2.php" method="post">
+                    <input type="text" style="visibility:hidden" value="empresa">
                     <div class="fila-arriba">
                         <div class="contenedor-input">
                             <label>
                                 Usuario <span class="req">*</span>
                             </label>
-                            <input type="text" required >
+                            <input type="text" pattern="[A-Za-z0-9.]{1,20}" name="usu" required >
                         </div>
 
                         <div class="contenedor-input">
                             <label>
                                 Contraseña <span class="req">*</span>
                             </label>
-                            <input type="text" required>
+                            <input type="text" pattern="[A-Za-z0-9.]{1,20}" name="contra" required>
                         </div>
                     </div>
                     <div class="contenedor-input">
                         <label>
                             Razón Social <span class="req">*</span>
                         </label>
-                        <input type="text" required>
+                        <input type="text" pattern="[A-Za-z0-9.]{1,60}" name="rs" required>
                     </div>
                     <div class="contenedor-input">
                             <label>
                                 Ruc <span class="req">*</span>
                             </label>
-                        <input type="email" required>
+                        <input type="text" pattern="[0-9.]{1,11}" name="ruc" required>
                     </div>
                     <div class="contenedor-input">
                         <label>
                             Correo <span class="req">*</span>
                         </label>
-                        <input type="password" required>
+                        <input type="email" name="cor" required>
                     </div>
 
                     <div class="contenedor-input">
                         <label>
                             Telefono <span class="req">*</span>
                         </label>
-                        <input type="password" required>
+                        <input type="text" pattern="[0-9.]{7}" name="tel" required>
                     </div>
                       <div class="contenedor-input">
                         <label>
                             Direccion <span class="req">*</span>
                         </label>
-                        <input type="text" required>
+                        <input type="text"  name="dir" required>
                     </div>
                                         <br>
-                    <p class="forgot"><a href="#">Tienes Cuenta ? Login </a></p>
+                    <p class="forgot"><a href="index.php">Tienes Cuenta ? Login </a></p>
                       <br>
                         <br>
 
